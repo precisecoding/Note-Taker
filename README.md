@@ -53,53 +53,21 @@ This note taking application solves the problem of not being able to take notes 
 
 ## What did you learn
 
-I learned how to create CRUDE routes on Express.js and how to read and write a file using the fs module.
+I learned how to create CRUD routes on Express.js and how to read and write a file using the fs module.
 
 ## What makes your project stand out
 
 This project stands out because it is a simple application that can be used to take notes and save them to a JSON file. It also has the ability to delete notes.
 
-## Description
+## Instructions
 
-On the back end, the application has included a `db.json` file that will be used to store and retrieve notes using the `fs` module.
-
-The following HTML routes were created:
-
-* `GET /notes` return the `notes.html` file.
-
-* `GET *` return the `index.html` file.
-
-The following API routes have be created:
-
-* `GET /api/notes` reads the `db.json` file and returns all saved notes as JSON.
-
-* `POST /api/notes` recieves a new note to save on the request body, adds it to the `db.json` file, and then returns the new note to the client. You'll need to find a way to give each note a unique id when it's saved.
+First, clone the repository to your local machine, git init, git add, git commit -m "message", git push origin main. Then, install the necessary dependencies by running npm install. Next, run node server.js to start the server. Finally, open your browser and navigate to localhost:3001 to view the application.
 
 ## Bonus
 
 I added functionality to DELETE notes. This was done by adding the following API route:
 
 * `DELETE /api/notes/:id` receives a query parameter that contains the id of a note to delete. To delete a note the code reads all notes from the `db.json` file, removes the note with the given `id` property, and then rewrites the notes to the `db.json` file.
-
-## Motivation
-
-I was motivated to do this project to learn how to use Express.js to create a server and how to use the fs module to read and write to a JSON file. I also wanted to learn how to deploy an application to Heroku.
-
-### Why
-
-I created this project because I wanted to learn how to use Express.js to create a server and how to use the fs module to read and write to a JSON file. I also wanted to learn how to deploy an application to Heroku.
-
-### What problem does it solve
-
-A note taking application with no back end will not be able to keep track of data and get information in a way that makes everyone happy.
-
-### What did I learn
-
-I learned how to create routes on Express.js and how to read and write a file using the fs module.
-
-### What makes this project stand out
-
-This project stands out because it is a simple application that can be used to take notes and save them to a JSON file. It also has the ability to delete notes.
 
 ### Link to github repository
 
@@ -109,10 +77,7 @@ This project stands out because it is a simple application that can be used to t
 
 Render Deployment Link:
 
-
-### This site was built using
-
-[Git Hub](https://pages.github.com/)
+https://note-taker-h9rt.onrender.com/
 
 ### License
 
